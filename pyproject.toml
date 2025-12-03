@@ -4,12 +4,15 @@ requires = ["hatchling"]
 
 [project]
 name = "twtr"
-version = "0.0.9"
+version = "0.1.0"
 description = "Minimal CLI to tweet via Twitter API."
 authors = [ { name = "Kian Kyars" } ]
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = ["tweepy"]
+dependencies = [
+    "dotenv>=0.9.9",
+    "tweepy",
+]
 
 [project.scripts]
 twtr = "twtr.cli:main" 

@@ -13,6 +13,7 @@
 ![](https://github.com/kiankyars/twtr/blob/main/keys.png?raw=true)
 
 2. Add these lines to your `~/.zshrc` or `~/.bashrc`:
+> December 2025 update: this is honestly bad practice, so I recommend putting your environment variables in a separate .env file and then exporting that. Nevertheless, you need to somehow expose these keys to the environment.
 ```sh
 export TWEEPY_BEARER_TOKEN="<your_bearer_token>"
 export TWEEPY_CONSUMER_KEY="<your_consumer_key>"
@@ -41,4 +42,22 @@ Then tweet from the CLI:
 
 ```sh
 twtr "your tweet here"
+```
+
+## Development
+
+Set up the development environment:
+
+```sh
+uv sync
+```
+
+Run the package locally for testing:
+
+```sh
+# Using the entry point script
+uv run twtr "your tweet here"
+
+# Or as a Python module
+uv run python -m twtr.cli "your tweet here"
 ```
