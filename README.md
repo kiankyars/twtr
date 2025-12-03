@@ -61,3 +61,16 @@ uv run twtr "your tweet here"
 # Or as a Python module
 uv run python -m twtr.cli "your tweet here"
 ```
+
+## Structure
+```
+.
+├── LICENSE
+├── README.md
+├── keys.png
+├── pyproject.toml
+├── twtr
+│   ├── __init__.py      # Public API (expose main functions/classes)
+│   └── cli.py           # CLI entry point (separate from core logic)
+└── uv.lock
+```
