@@ -1,9 +1,9 @@
 import os
 import tweepy
 from dotenv import load_dotenv
-load_dotenv()
 
 def tweet(text):
+    load_dotenv()  # Load env vars when function is called, not at import time
     bearer_token = os.getenv('TWEEPY_BEARER_TOKEN')
     consumer_key = os.getenv('TWEEPY_CONSUMER_KEY')
     consumer_secret = os.getenv('TWEEPY_CONSUMER_SECRET')
