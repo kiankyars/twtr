@@ -6,7 +6,7 @@ requires = ["hatchling"]
 name = "twtr"
 version = "0.1.4"
 description = "Minimal CLI to tweet via Twitter API."
-authors = [ { name = "Kian Kyars" } ]
+authors = [{ name="Kian Kyars", email="kiankyars@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
